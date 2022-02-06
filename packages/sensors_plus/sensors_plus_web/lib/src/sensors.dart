@@ -103,7 +103,7 @@ class SensorsPlugin extends SensorsPlatform {
       _gyroscopeEventStreamController = StreamController<GyroscopeEvent>();
       _featureDetected(
         () {
-          final _gyroscope = html.Gyroscope();
+          final _gyroscope = html.Gyroscope({'frequency': 60});
 
           setProperty(
             _gyroscope,
