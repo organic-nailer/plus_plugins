@@ -57,7 +57,7 @@ class SensorsPlugin extends SensorsPlatform {
       _accelerometerStreamController = StreamController<AccelerometerEvent>();
       _featureDetected(
         () {
-          final _accelerometer = html.Accelerometer();
+          final _accelerometer = html.Accelerometer({'frequency': 60});
 
           setProperty(
             _accelerometer,
